@@ -32,5 +32,6 @@ export class AppComponent {
   onSubmit() {
     this.cityName = this.ngForm.value.city;
     this.getWeatherData();
+    this.ngForm.controls['city'].setValue(null);
   }
 }
