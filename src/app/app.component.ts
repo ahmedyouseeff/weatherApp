@@ -22,11 +22,9 @@ export class AppComponent {
   }
 
   getWeatherData() {
-    this.api.getWeatherData(this.cityName).subscribe({
-      next: (response) => {
-        this.cityData = response;
-      },
-    });
+    this.api
+      .getWeatherData(this.cityName)
+      .subscribe((res) => (this.cityData = res));
   }
 
   onSubmit() {

@@ -6,8 +6,8 @@
 
 <div class="container" *ngIf="cityData">
   <div class="upper-content">
-    <img src="../assets/day.png" *ngIf="cityData.current.is_day">
-    <img src="../assets/night.png" *ngIf="!cityData.current.is_day">
+    <img src="../assets/day.png" alt="day" *ngIf="cityData.current.is_day">
+    <img src="../assets/night.png" alt="night" *ngIf="!cityData.current.is_day">
 
     <div class="weather-data">
       <div class="location">
@@ -29,7 +29,7 @@
     <div class="more-info-container">
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/atmospheric.png">
+          <img src="../assets/atmospheric.png" alt="pressure">
           <span>pressure</span>
         </div>
 
@@ -40,7 +40,7 @@
 
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/heating.png">
+          <img src="../assets/heating.png" alt="condition">
           <span>condition</span>
         </div>
 
@@ -51,7 +51,7 @@
 
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/humidity.png">
+          <img src="../assets/humidity.png" alt="humidity">
           <span>humidity</span>
         </div>
 
@@ -62,7 +62,7 @@
 
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/wind.png">
+          <img src="../assets/wind.png" alt="wind">
           <span>wind</span>
         </div>
 
